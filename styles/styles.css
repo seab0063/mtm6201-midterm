@@ -1,0 +1,433 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/******************************************************
+                    Defaults   
+******************************************************/
+
+html{
+    background-color:lime;
+    font-size: 14px;
+}
+
+a{
+    text-decoration:none;
+}
+
+h1{
+    font-size:4rem;
+	font-family: 'Elephant';
+}
+
+h2{
+    font-size:2.5rem;
+	font-family: 'Elephant';
+}
+
+h3{
+    font-size:1.5rem;
+	font-family: 'Elephant';
+}
+
+p{
+	font-family: 'Open Sans', sans-serif;
+    line-height:1.4;
+}
+
+.button{
+    background-color:#831FA7;
+    color:white;
+	font-family: 'Open Sans', sans-serif;
+    padding:1rem;
+    display:inline-block;
+    margin-top:10px;
+    border-radius:9px;
+	transition-property: all;
+	transition-duration: 0.5s;
+	cursor:pointer;
+}
+
+.button:hover{
+	border:1px solid #831FA7;
+	background-color:white;
+    color:#831FA7;
+}
+
+#slide1:checked ~ label:nth-of-type(1){ background:hsla(101,100%,50%,1.00); font-weight:bold; }
+#slide2:checked ~ label:nth-of-type(2){ background:hsla(101,100%,50%,1.00); font-weight:bold; }
+#slide3:checked ~ label:nth-of-type(3){ background:hsla(101,100%,50%,1.00); font-weight:bold; }
+
+/******************************************************
+                    Nav   
+******************************************************/
+
+nav{
+	font-family: 'Elephant';
+	font-size:2rem;
+	background-color:#831FA7;
+}
+
+.navbar{
+    background-color:#831FA7;
+}
+
+nav ul a{
+    display:block;
+    padding:3rem;
+    color:white;
+    text-align:center; 
+}
+
+nav a.current, nav a:active{
+    background-color:white;
+    color:#831FA7;
+}
+
+/******************************************************
+                    Home 
+******************************************************/
+
+#jeff{
+	width:100%;
+}
+
+#logo{
+	width:100%;
+}
+
+.pictures{
+	border:5px solid #831FA7;
+}
+
+.jimmy h2{
+	margin:5px;
+	padding:10px;
+	text-align:center;
+}
+
+.jimmy p{
+	padding:10px;
+}
+
+.events{
+    padding:0 10px;
+}
+
+.events section{
+    margin-bottom:10px;
+}
+
+.events section img{
+    width:100%;
+}
+
+.events section div{
+    padding:0 10px 10px;
+}
+
+.upcoming h2{
+	margin:5px;
+	padding:10px;
+	text-align:center;
+}
+
+.events h3{
+	margin:5px;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+/******************************************************
+                    About
+******************************************************/
+
+#joe{
+	width:100%;
+}
+
+.jimmy h1{
+	margin:5px;
+	padding:10px;
+}
+
+.member{
+    padding:0 10px;
+}
+
+.member section{
+    margin-bottom:10px;
+}
+
+.member img{
+    width:100%;
+}
+
+.member section div{
+    padding:10px;
+}
+
+.member h3{
+    margin:10px 0 5px;
+}
+
+.member h4{
+	font-weight:bold;
+    line-height:2.4;
+}
+
+.member p{
+    margin:10px 0;
+}
+
+.team h2{
+	margin:5px;
+	padding:10px;
+	text-align:center;
+}
+
+/******************************************************
+                    Contact  
+******************************************************/
+.contact{
+    padding:20px;
+}
+
+.contact h1{
+	margin:5px;
+	padding:10px;
+}
+
+.contact h2{
+	margin:5px;
+	padding:10px;
+}
+
+.contact label{
+    display:block;
+    margin-top:10px;
+}
+
+.contact input, .contact textarea{
+    box-sizing:border-box;
+    display:block;
+    width:100%;
+}
+
+.contact textarea{
+    height:3.5rem;
+    margin-bottom:1rem;
+}
+
+.contact button{
+    width:100%;
+    background-color:#831FA7;
+    color:white;
+    border-radius:10px;
+    padding:5px;
+}
+
+table{
+    width:100%;
+}
+
+th, td{
+	font-family: 'Open Sans', sans-serif;
+    border:1px solid black;
+    padding:2.5rem;
+}
+
+th{
+	font-weight:bold;
+    background-color:#831FA7;
+}
+
+.contact iframe{
+    width:100%;
+    height:500px;
+	border:5px solid #831FA7;
+}
+
+.contact button{
+	animation-name:submit;
+	animation-duration:2s;
+	animation-timing-function:ease-in-out;
+	animation-iteration-count:infinite;
+}
+
+/******************************************************
+                    Footer  
+******************************************************/
+
+footer{
+    font-size:1.2rem;
+    position:relative;
+    padding:30px;
+	background-color:#831FA7;
+}
+
+footer p{
+	text-align:right;
+    color:white;
+}
+
+/******************************************************
+                    Animations  
+******************************************************/
+
+@keyframes submit{
+	50% {
+		transform:scale(0.5, 0.75);
+	}
+}
+
+/******************************************************
+                    Media Queries   
+******************************************************/
+
+@media screen and (min-width:760px){
+
+	/* ~~~~~~~~~~~~~~~~ Nav ~~~~~~~~~~~~~~~~*/
+    nav{
+        display:flex;
+        align-items:center;
+        justify-content:space-around;
+    }
+
+    nav ul{
+        flex-grow:1;
+        max-width:600px;
+        display:flex;
+        justify-content:space-around;
+		text-align:center; 
+    }
+
+    nav a:hover{
+        background-color:white;
+        color:#831FA7;
+    }
+
+	/* ~~~~~~~~~~~~~~~~ Home ~~~~~~~~~~~~~~~~*/
+	#jeff{
+		width:700px;
+		margin-left:20px;
+		margin-top:20px;
+		margin-bottom:20px;
+	}
+
+	#logo{
+		width:500px;
+		margin-left:20px;
+		margin-top:20px;
+	}
+
+	.timmy{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+    }
+
+	.jimmy{
+		margin-left:20px;
+	}
+
+	.upcoming{
+		margin:20px;
+	}
+
+	.events{
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+    }
+
+	.upcoming h2{
+		text-align:left;
+	}
+
+	/* ~~~~~~~~~~~~~~~~ About ~~~~~~~~~~~~~~~~*/
+	#joe{
+		width:600px;
+		margin-left:20px;
+		margin-top:20px;
+		margin-bottom:20px;
+	}
+
+	.team{
+		margin:20px;
+	}
+
+	.member{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+    }
+
+	.team h2{
+		text-align:left;
+	}
+
+
+	/* ~~~~~~~~~~~~~~~~ Contact ~~~~~~~~~~~~~~~~*/
+    .contact{
+        display:grid;
+        grid-template-columns:repeat(6, 1fr);
+        grid-template-areas:
+            "george george george george george george"
+            "johnny johnny johnny herb herb herb"
+            "robert robert robert robert robert robert";
+        column-gap:20px;
+        margin:20px;
+    }
+
+    .contact h1{ grid-area:george;}
+    .contactus{ grid-area:johnny;}
+    .location{ grid-area:robert;}
+    .hours{ grid-area:herb;}
+
+    .contact button:hover{
+        animation-duration:0.5s;
+    }
+}
