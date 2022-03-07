@@ -89,6 +89,8 @@ p{
     display:inline-block;
     margin-top:10px;
     border-radius:9px;
+    /*used the transition property so the button would slowly change color when you hover over it.
+    Same goes for the list items.*/
 	transition-property: all;
 	transition-duration: 0.5s;
 	cursor:pointer;
@@ -119,6 +121,7 @@ nav ul a{
 }
 
 nav a.current, nav a:active{
+    /*this is to determine the color it will change to, in my case I reversed the text and background colors.*/
     background-color:white;
     color:#831FA7;
 }
@@ -136,6 +139,7 @@ nav a.current, nav a:active{
 }
 
 .pictures{
+    /*added this border so it will stay true to the mockup, I did it with all of the images.*/
 	border:5px solid #831FA7;
 }
 
@@ -288,6 +292,7 @@ th{
 }
 
 .contact button{
+    /*I needed someting to use the animation for, and I thought this button would work well with it.*/
 	animation-name:submit;
 	animation-duration:2s;
 	animation-timing-function:ease-in-out;
@@ -317,6 +322,7 @@ footer p{
 @keyframes submit{
 	50% {
 		transform:scale(0.5, 0.75);
+        /*I thought the scale property would be the best choice for this case.*/
 	}
 }
 
@@ -348,6 +354,8 @@ footer p{
 
 	/* ~~~~~~~~~~~~~~~~ Home ~~~~~~~~~~~~~~~~*/
 	#jeff{
+        /*I used derivv to resize some of my pictures including this one. I had to fix the width
+        and I did it in percentage so it would be responsive.*/
         width:95%;
 		margin-left:20px;
 		margin-top:20px;
@@ -362,6 +370,7 @@ footer p{
 	}
 
 	.timmy{
+        /*used the grid property so the picture and the text would be beside each other, as in the mockup.*/
         display:grid;
         grid-template-columns:1fr 1fr;
     }
@@ -375,6 +384,7 @@ footer p{
 	}
 
 	.events{
+        /*used the grid property so each section would sit next to each other.*/
         display:grid;
         grid-template-columns:1fr 1fr 1fr;
     }
@@ -407,6 +417,7 @@ footer p{
 
 	/* ~~~~~~~~~~~~~~~~ Contact ~~~~~~~~~~~~~~~~*/
     .contact{
+        /*used the grid area property to assign each section of the page to a spot.*/
         display:grid;
         grid-template-columns:repeat(6, 1fr);
         grid-template-areas:
